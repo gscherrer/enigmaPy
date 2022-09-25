@@ -1,0 +1,519 @@
+Date/Time:       2022-09-25 17:00:23 
+Command line:    C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\Scripts\briefcase new
+
+OS Release:      Windows 10
+OS Version:      10.0.22000
+Architecture:    AMD64
+Platform:        Windows-10-10.0.22000-SP0
+
+Python exe:      C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\Scripts\python.exe
+Python version:  3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.9
+Target platform: all
+Target format:   None
+
+Environment Variables:
+    ACSETUPSVCPORT=23210
+    ACSVCPORT=17532
+    ALLUSERSPROFILE=C:\ProgramData
+    APPDATA=C:\Users\LeConquerant\AppData\Roaming
+    COMMONPROGRAMFILES=C:\Program Files\Common Files
+    COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+    COMMONPROGRAMW6432=C:\Program Files\Common Files
+    COMPUTERNAME=LAPTOP-H0JM5O0S
+    COMSPEC=C:\WINDOWS\system32\cmd.exe
+    DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+    FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+    FPS_BROWSER_USER_PROFILE_STRING=Default
+    HOMEDRIVE=C:
+    HOMEPATH=\Users\LeConquerant
+    IDEA_INITIAL_DIRECTORY=C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.2\jbr\bin
+    LOCALAPPDATA=C:\Users\LeConquerant\AppData\Local
+    LOGONSERVER=\\LAPTOP-H0JM5O0S
+    NUMBER_OF_PROCESSORS=8
+    ONEDRIVE=C:\Users\LeConquerant\OneDrive
+    OS=Windows_NT
+    PATH=C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv/Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\LeConquerant\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\LeConquerant\AppData\Local\Programs\Python\Python310\;C:\Users\LeConquerant\AppData\Local\Microsoft\WindowsApps;C:\Users\LeConquerant\AppData\Local\atom\bin;C:\Users\LeConquerant\AppData\Local\Microsoft\WindowsApps;;C:\Users\LeConquerant\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.2\bin;
+    PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+    PROCESSOR_ARCHITECTURE=AMD64
+    PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+    PROCESSOR_LEVEL=6
+    PROCESSOR_REVISION=8c01
+    PROGRAMDATA=C:\ProgramData
+    PROGRAMFILES=C:\Program Files
+    PROGRAMFILES(X86)=C:\Program Files (x86)
+    PROGRAMW6432=C:\Program Files
+    PSMODULEPATH=C:\Users\LeConquerant\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+    PUBLIC=C:\Users\Public
+    PYCHARM COMMUNITY EDITION=C:\Program Files\JetBrains\PyCharm Community Edition 2022.2.2\bin;
+    RLSSVCPORT=22112
+    SESSIONNAME=Console
+    SYSTEMDRIVE=C:
+    SYSTEMROOT=C:\WINDOWS
+    TEMP=C:\Users\LECONQ~1\AppData\Local\Temp
+    TERMINAL_EMULATOR=JetBrains-JediTerm
+    TERM_SESSION_ID=66a94477-7e61-4f17-b36e-d2d664891081
+    TMP=C:\Users\LECONQ~1\AppData\Local\Temp
+    USERDOMAIN=LAPTOP-H0JM5O0S
+    USERDOMAIN_ROAMINGPROFILE=LAPTOP-H0JM5O0S
+    USERNAME=LeConquerant
+    USERPROFILE=C:\Users\LeConquerant
+    VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+    VIRTUAL_ENV=C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv
+    WINDIR=C:\WINDOWS
+    ZES_ENABLE_SYSMAN=1
+    __INTELLIJ_COMMAND_HISTFILE__=C:\Users\LeConquerant\AppData\Local\JetBrains\PyCharmCE2022.2\terminal\history\enigmaPy-history
+
+Briefcase Log:
+[17:00:23]                                                                                                                                                            __main__.py:22
+           Briefcase requires git, but it is not installed (or is not on your PATH). Visit:                                                                           __main__.py:23
+                                                                                                                                                                      __main__.py:23
+               https://git-scm.com/                                                                                                                                   __main__.py:23
+                                                                                                                                                                      __main__.py:23
+           to download and install git manually.                                                                                                                      __main__.py:23
+                                                                                                                                                                      __main__.py:23
+           If you have installed git recently and are still getting this error, you may                                                                               __main__.py:23
+           need to restart your terminal session.                                                                                                                     __main__.py:23
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\git\__init__.py:87 in <module>                                                                             │
+│                                                                                                                                                                                  │
+│   84                                                                                                                                                                             │
+│   85 #################                                                                                                                                                           │
+│   86 try:                                                                                                                                                                        │
+│ ❱ 87 │   refresh()                                                                                                                                                               │
+│   88 except Exception as exc:                                                                                                                                                    │
+│   89 │   raise ImportError('Failed to initialize: {0}'.format(exc)) from exc                                                                                                     │
+│   90 #################                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────────────────╮ │
+│ │                       __all__ = [                                                                                                                                            │ │
+│ │                                 │   'BadName',                                                                                                                               │ │
+│ │                                 │   'to_hex_sha',                                                                                                                            │ │
+│ │                                 │   'ODBError',                                                                                                                              │ │
+│ │                                 │   'InvalidDBRoot',                                                                                                                         │ │
+│ │                                 │   'BadObject',                                                                                                                             │ │
+│ │                                 │   'ParseError',                                                                                                                            │ │
+│ │                                 │   'AmbiguousObjectName',                                                                                                                   │ │
+│ │                                 │   'BadObjectType',                                                                                                                         │ │
+│ │                                 │   'UnsupportedOperation',                                                                                                                  │ │
+│ │                                 │   'safe_decode',                                                                                                                           │ │
+│ │                                 │   ... +61                                                                                                                                  │ │
+│ │                                 ]                                                                                                                                            │ │
+│ │                  __builtins__ = {                                                                                                                                            │ │
+│ │                                 │   '__name__': 'builtins',                                                                                                                  │ │
+│ │                                 │   '__doc__': 'Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil'+46,                                      │ │
+│ │                                 │   '__package__': '',                                                                                                                       │ │
+│ │                                 │   '__loader__': <class '_frozen_importlib.BuiltinImporter'>,                                                                               │ │
+│ │                                 │   '__spec__': ModuleSpec(name='builtins', loader=<class '_frozen_importlib.BuiltinImporter'>, origin='built-in'),                          │ │
+│ │                                 │   '__build_class__': <built-in function __build_class__>,                                                                                  │ │
+│ │                                 │   '__import__': <built-in function __import__>,                                                                                            │ │
+│ │                                 │   'abs': <built-in function abs>,                                                                                                          │ │
+│ │                                 │   'all': <built-in function all>,                                                                                                          │ │
+│ │                                 │   'any': <built-in function any>,                                                                                                          │ │
+│ │                                 │   ... +146                                                                                                                                 │ │
+│ │                                 }                                                                                                                                            │ │
+│ │                    __cached__ = 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\__pyca'+30                                               │ │
+│ │                       __doc__ = None                                                                                                                                         │ │
+│ │                      __file__ = 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\__init'+5                                                │ │
+│ │                    __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x000002E40E3B0910>                                                                   │ │
+│ │                      __name__ = 'git'                                                                                                                                        │ │
+│ │                   __package__ = 'git'                                                                                                                                        │ │
+│ │                      __path__ = ['C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git']                                                        │ │
+│ │                      __spec__ = ModuleSpec(name='git', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000002E40E3B0910>,                                    │ │
+│ │                                 origin='C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\__init__.py',                                     │ │
+│ │                                 submodule_search_locations=['C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git'])                            │ │
+│ │                   __version__ = '3.1.27'                                                                                                                                     │ │
+│ │               _init_externals = <function _init_externals at 0x000002E40E418E50>                                                                                             │ │
+│ │                         Actor = <class 'git.util.Actor'>                                                                                                                     │ │
+│ │           AmbiguousObjectName = <class 'gitdb.exc.AmbiguousObjectName'>                                                                                                      │ │
+│ │                       BadName = <class 'gitdb.exc.BadName'>                                                                                                                  │ │
+│ │                     BadObject = <class 'gitdb.exc.BadObject'>                                                                                                                │ │
+│ │                 BadObjectType = <class 'gitdb.exc.BadObjectType'>                                                                                                            │ │
+│ │                          base = <module 'git.index.base' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\base.py'>           │ │
+│ │                BaseIndexEntry = <class 'git.index.typ.BaseIndexEntry'>                                                                                                       │ │
+│ │                          Blob = <class 'git.objects.blob.Blob'>                                                                                                              │ │
+│ │                    BlobFilter = <class 'git.index.typ.BlobFilter'>                                                                                                           │ │
+│ │              BlockingLockFile = <class 'git.util.BlockingLockFile'>                                                                                                          │ │
+│ │                    CacheError = <class 'git.exc.CacheError'>                                                                                                                 │ │
+│ │                 CheckoutError = <class 'git.exc.CheckoutError'>                                                                                                              │ │
+│ │                           cmd = <module 'git.cmd' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\cmd.py'>                          │ │
+│ │                  CommandError = <class 'git.exc.CommandError'>                                                                                                               │ │
+│ │                        Commit = <class 'git.objects.commit.Commit'>                                                                                                          │ │
+│ │                        compat = <module 'git.compat' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\compat.py'>                    │ │
+│ │                        config = <module 'git.config' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\config.py'>                    │ │
+│ │                            db = <module 'git.db' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\db.py'>                            │ │
+│ │                          diff = <module 'git.diff' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\diff.py'>                        │ │
+│ │                          Diff = <class 'git.diff.Diff'>                                                                                                                      │ │
+│ │                      Diffable = <class 'git.diff.Diffable'>                                                                                                                  │ │
+│ │                     DiffIndex = <class 'git.diff.DiffIndex'>                                                                                                                 │ │
+│ │                     FetchInfo = <class 'git.remote.FetchInfo'>                                                                                                               │ │
+│ │                           fun = <module 'git.index.fun' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\fun.py'>             │ │
+│ │                           Git = <class 'git.cmd.Git'>                                                                                                                        │ │
+│ │                        GIT_OK = False                                                                                                                                        │ │
+│ │                GitCmdObjectDB = <class 'git.db.GitCmdObjectDB'>                                                                                                              │ │
+│ │               GitCommandError = <class 'git.exc.GitCommandError'>                                                                                                            │ │
+│ │            GitCommandNotFound = <class 'git.exc.GitCommandNotFound'>                                                                                                         │ │
+│ │               GitConfigParser = <class 'git.config.GitConfigParser'>                                                                                                         │ │
+│ │                         GitDB = <class 'gitdb.db.git.GitDB'>                                                                                                                 │ │
+│ │                      GitError = <class 'git.exc.GitError'>                                                                                                                   │ │
+│ │                          head = <module 'git.refs.head' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\head.py'>             │ │
+│ │                          HEAD = <class 'git.refs.head.HEAD'>                                                                                                                 │ │
+│ │                          Head = <class 'git.refs.head.Head'>                                                                                                                 │ │
+│ │            HookExecutionError = <class 'git.exc.HookExecutionError'>                                                                                                         │ │
+│ │                         index = <module 'git.index' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\__init__.py'>            │ │
+│ │                    IndexEntry = <class 'git.index.typ.IndexEntry'>                                                                                                           │ │
+│ │                     IndexFile = <class 'git.index.base.IndexFile'>                                                                                                           │ │
+│ │                   IndexObject = <class 'git.objects.base.IndexObject'>                                                                                                       │ │
+│ │                       inspect = <module 'inspect' from 'C:\\Users\\LeConquerant\\AppData\\Local\\Programs\\Python\\Python310\\lib\\inspect.py'>                              │ │
+│ │                 InvalidDBRoot = <class 'gitdb.exc.InvalidDBRoot'>                                                                                                            │ │
+│ │     InvalidGitRepositoryError = <class 'git.exc.InvalidGitRepositoryError'>                                                                                                  │ │
+│ │                          List = typing.List                                                                                                                                  │ │
+│ │                      LockFile = <class 'git.util.LockFile'>                                                                                                                  │ │
+│ │                           log = <module 'git.refs.log' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\log.py'>               │ │
+│ │               NoSuchPathError = <class 'git.exc.NoSuchPathError'>                                                                                                            │ │
+│ │                     NULL_TREE = <object object at 0x000002E40A2074D0>                                                                                                        │ │
+│ │                        Object = <class 'git.objects.base.Object'>                                                                                                            │ │
+│ │                       objects = <module 'git.objects' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\objects\\__init__.py'>        │ │
+│ │                      ODBError = <class 'gitdb.exc.ODBError'>                                                                                                                 │ │
+│ │                      Optional = typing.Optional                                                                                                                              │ │
+│ │                            os = <module 'os' from 'C:\\Users\\LeConquerant\\AppData\\Local\\Programs\\Python\\Python310\\lib\\os.py'>                                        │ │
+│ │                           osp = <module 'ntpath' from 'C:\\Users\\LeConquerant\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ntpath.py'>                                │ │
+│ │                    ParseError = <class 'gitdb.exc.ParseError'>                                                                                                               │ │
+│ │                      PathLike = typing.Union[str, os.PathLike]                                                                                                               │ │
+│ │                      PushInfo = <class 'git.remote.PushInfo'>                                                                                                                │ │
+│ │                     reference = <module 'git.refs.reference' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\reference.py'>   │ │
+│ │                     Reference = <class 'git.refs.reference.Reference'>                                                                                                       │ │
+│ │                        RefLog = <class 'git.refs.log.RefLog'>                                                                                                                │ │
+│ │                   RefLogEntry = <class 'git.refs.log.RefLogEntry'>                                                                                                           │ │
+│ │                       refresh = <function refresh at 0x000002E40E418EE0>                                                                                                     │ │
+│ │                          refs = <module 'git.refs' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\__init__.py'>              │ │
+│ │                        remote = <module 'git.remote' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\remote.py'>                    │ │
+│ │                        Remote = <class 'git.remote.Remote'>                                                                                                                  │ │
+│ │                RemoteProgress = <class 'git.util.RemoteProgress'>                                                                                                            │ │
+│ │               RemoteReference = <class 'git.refs.remote.RemoteReference'>                                                                                                    │ │
+│ │                          repo = <module 'git.repo' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\repo\\__init__.py'>              │ │
+│ │                          Repo = <class 'git.repo.base.Repo'>                                                                                                                 │ │
+│ │          RepositoryDirtyError = <class 'git.exc.RepositoryDirtyError'>                                                                                                       │ │
+│ │                        rmtree = <function rmtree at 0x000002E40E4A9E10>                                                                                                      │ │
+│ │                    RootModule = <class 'git.objects.submodule.root.RootModule'>                                                                                              │ │
+│ │            RootUpdateProgress = <class 'git.objects.submodule.root.RootUpdateProgress'>                                                                                      │ │
+│ │                   safe_decode = <function safe_decode at 0x000002E40E4193F0>                                                                                                 │ │
+│ │                      Sequence = typing.Sequence                                                                                                                              │ │
+│ │                         Stats = <class 'git.util.Stats'>                                                                                                                     │ │
+│ │                     Submodule = <class 'git.objects.submodule.base.Submodule'>                                                                                               │ │
+│ │                      symbolic = <module 'git.refs.symbolic' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\symbolic.py'>     │ │
+│ │             SymbolicReference = <class 'git.refs.symbolic.SymbolicReference'>                                                                                                │ │
+│ │                           sys = <module 'sys' (built-in)>                                                                                                                    │ │
+│ │                           tag = <module 'git.refs.tag' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\tag.py'>               │ │
+│ │                           Tag = <class 'git.refs.tag.TagReference'>                                                                                                          │ │
+│ │                     TagObject = <class 'git.objects.tag.TagObject'>                                                                                                          │ │
+│ │                  TagReference = <class 'git.refs.tag.TagReference'>                                                                                                          │ │
+│ │                    to_hex_sha = <function to_hex_sha at 0x000002E40E439510>                                                                                                  │ │
+│ │                          Tree = <class 'git.objects.tree.Tree'>                                                                                                              │ │
+│ │                  TreeModifier = <class 'git.objects.tree.TreeModifier'>                                                                                                      │ │
+│ │                         Tuple = typing.Tuple                                                                                                                                 │ │
+│ │                           typ = <module 'git.index.typ' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\typ.py'>             │ │
+│ │                 TYPE_CHECKING = False                                                                                                                                        │ │
+│ │                         types = <module 'git.types' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\types.py'>                      │ │
+│ │                         Union = typing.Union                                                                                                                                 │ │
+│ │          UnmergedEntriesError = <class 'git.exc.UnmergedEntriesError'>                                                                                                       │ │
+│ │          UnsupportedOperation = <class 'gitdb.exc.UnsupportedOperation'>                                                                                                     │ │
+│ │                UpdateProgress = <class 'git.objects.submodule.base.UpdateProgress'>                                                                                          │ │
+│ │                          util = <module 'git.index.util' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\util.py'>           │ │
+│ │ WorkTreeRepositoryUnsupported = <class 'git.exc.WorkTreeRepositoryUnsupported'>                                                                                              │ │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                                                  │
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\git\__init__.py:76 in refresh                                                                              │
+│                                                                                                                                                                                  │
+│   73 │   global GIT_OK                                                                       ╭── locals ───╮                                                                     │
+│   74 │   GIT_OK = False                                                                      │ path = None │                                                                     │
+│   75 │                                                                                       ╰─────────────╯                                                                     │
+│ ❱ 76 │   if not Git.refresh(path=path):                                                                                                                                          │
+│   77 │   │   return                                                                                                                                                              │
+│   78 │   if not FetchInfo.refresh():                                                                                                                                             │
+│   79 │   │   return                                                                                                                                                              │
+│                                                                                                                                                                                  │
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\git\cmd.py:341 in refresh                                                                                  │
+│                                                                                                                                                                                  │
+│    338 │   │   │   │   │   if mode in warn:                                                                                                                                      │
+│    339 │   │   │   │   │   │   print("WARNING: %s" % err)                                                                                                                        │
+│    340 │   │   │   │   │   else:                                                                                                                                                 │
+│ ❱  341 │   │   │   │   │   │   raise ImportError(err)                                                                                                                            │
+│    342 │   │   │   │   else:                                                                                                                                                     │
+│    343 │   │   │   │   │   err = dedent("""\                                                                                                                                     │
+│    344 │   │   │   │   │   │   %s environment variable has been set but it has been set with an                                                                                  │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────── locals ──────────────────────────────────────────────╮                                                                            │
+│ │     cls = <class 'git.cmd.Git'>                                                                   │                                                                            │
+│ │     err = 'Bad git executable.\nThe git executable must be specified in one of the following'+534 │                                                                            │
+│ │   error = ['error', 'e', 'raise', 'r', '2']                                                       │                                                                            │
+│ │ has_git = False                                                                                   │                                                                            │
+│ │    mode = 'raise'                                                                                 │                                                                            │
+│ │ new_git = 'git'                                                                                   │                                                                            │
+│ │ old_git = None                                                                                    │                                                                            │
+│ │    path = None                                                                                    │                                                                            │
+│ │   quiet = ['quiet', 'q', 'silence', 's', 'none', 'n', '0']                                        │                                                                            │
+│ │    warn = ['warn', 'w', 'warning', '1']                                                           │                                                                            │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ImportError: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\briefcase\integrations\git.py:23 in verify_git_is_installed                                                │
+│                                                                                                                                                                                  │
+│   20 │   """                                                                                 ╭────────────────────────────────── locals ──────────────────────────────────╮      │
+│   21 │   # Check whether the git executable could be imported.                               │ command = <briefcase.commands.new.NewCommand object at 0x000002E40AB962C0> │      │
+│   22 │   try:                                                                                ╰────────────────────────────────────────────────────────────────────────────╯      │
+│ ❱ 23 │   │   import git                                                                                                                                                          │
+│   24 │   │                                                                                                                                                                       │
+│   25 │   │   return git                                                                                                                                                          │
+│   26 │   except ImportError as e:                                                                                                                                                │
+│                                                                                                                                                                                  │
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\git\__init__.py:89 in <module>                                                                             │
+│                                                                                                                                                                                  │
+│   86 try:                                                                                                                                                                        │
+│   87 │   refresh()                                                                                                                                                               │
+│   88 except Exception as exc:                                                                                                                                                    │
+│ ❱ 89 │   raise ImportError('Failed to initialize: {0}'.format(exc)) from exc                                                                                                     │
+│   90 #################                                                                                                                                                           │
+│   91                                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────────────────╮ │
+│ │                       __all__ = [                                                                                                                                            │ │
+│ │                                 │   'BadName',                                                                                                                               │ │
+│ │                                 │   'to_hex_sha',                                                                                                                            │ │
+│ │                                 │   'ODBError',                                                                                                                              │ │
+│ │                                 │   'InvalidDBRoot',                                                                                                                         │ │
+│ │                                 │   'BadObject',                                                                                                                             │ │
+│ │                                 │   'ParseError',                                                                                                                            │ │
+│ │                                 │   'AmbiguousObjectName',                                                                                                                   │ │
+│ │                                 │   'BadObjectType',                                                                                                                         │ │
+│ │                                 │   'UnsupportedOperation',                                                                                                                  │ │
+│ │                                 │   'safe_decode',                                                                                                                           │ │
+│ │                                 │   ... +61                                                                                                                                  │ │
+│ │                                 ]                                                                                                                                            │ │
+│ │                  __builtins__ = {                                                                                                                                            │ │
+│ │                                 │   '__name__': 'builtins',                                                                                                                  │ │
+│ │                                 │   '__doc__': 'Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil'+46,                                      │ │
+│ │                                 │   '__package__': '',                                                                                                                       │ │
+│ │                                 │   '__loader__': <class '_frozen_importlib.BuiltinImporter'>,                                                                               │ │
+│ │                                 │   '__spec__': ModuleSpec(name='builtins', loader=<class '_frozen_importlib.BuiltinImporter'>, origin='built-in'),                          │ │
+│ │                                 │   '__build_class__': <built-in function __build_class__>,                                                                                  │ │
+│ │                                 │   '__import__': <built-in function __import__>,                                                                                            │ │
+│ │                                 │   'abs': <built-in function abs>,                                                                                                          │ │
+│ │                                 │   'all': <built-in function all>,                                                                                                          │ │
+│ │                                 │   'any': <built-in function any>,                                                                                                          │ │
+│ │                                 │   ... +146                                                                                                                                 │ │
+│ │                                 }                                                                                                                                            │ │
+│ │                    __cached__ = 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\__pyca'+30                                               │ │
+│ │                       __doc__ = None                                                                                                                                         │ │
+│ │                      __file__ = 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\__init'+5                                                │ │
+│ │                    __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x000002E40E3B0910>                                                                   │ │
+│ │                      __name__ = 'git'                                                                                                                                        │ │
+│ │                   __package__ = 'git'                                                                                                                                        │ │
+│ │                      __path__ = ['C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git']                                                        │ │
+│ │                      __spec__ = ModuleSpec(name='git', loader=<_frozen_importlib_external.SourceFileLoader object at 0x000002E40E3B0910>,                                    │ │
+│ │                                 origin='C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\__init__.py',                                     │ │
+│ │                                 submodule_search_locations=['C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git'])                            │ │
+│ │                   __version__ = '3.1.27'                                                                                                                                     │ │
+│ │               _init_externals = <function _init_externals at 0x000002E40E418E50>                                                                                             │ │
+│ │                         Actor = <class 'git.util.Actor'>                                                                                                                     │ │
+│ │           AmbiguousObjectName = <class 'gitdb.exc.AmbiguousObjectName'>                                                                                                      │ │
+│ │                       BadName = <class 'gitdb.exc.BadName'>                                                                                                                  │ │
+│ │                     BadObject = <class 'gitdb.exc.BadObject'>                                                                                                                │ │
+│ │                 BadObjectType = <class 'gitdb.exc.BadObjectType'>                                                                                                            │ │
+│ │                          base = <module 'git.index.base' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\base.py'>           │ │
+│ │                BaseIndexEntry = <class 'git.index.typ.BaseIndexEntry'>                                                                                                       │ │
+│ │                          Blob = <class 'git.objects.blob.Blob'>                                                                                                              │ │
+│ │                    BlobFilter = <class 'git.index.typ.BlobFilter'>                                                                                                           │ │
+│ │              BlockingLockFile = <class 'git.util.BlockingLockFile'>                                                                                                          │ │
+│ │                    CacheError = <class 'git.exc.CacheError'>                                                                                                                 │ │
+│ │                 CheckoutError = <class 'git.exc.CheckoutError'>                                                                                                              │ │
+│ │                           cmd = <module 'git.cmd' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\cmd.py'>                          │ │
+│ │                  CommandError = <class 'git.exc.CommandError'>                                                                                                               │ │
+│ │                        Commit = <class 'git.objects.commit.Commit'>                                                                                                          │ │
+│ │                        compat = <module 'git.compat' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\compat.py'>                    │ │
+│ │                        config = <module 'git.config' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\config.py'>                    │ │
+│ │                            db = <module 'git.db' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\db.py'>                            │ │
+│ │                          diff = <module 'git.diff' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\diff.py'>                        │ │
+│ │                          Diff = <class 'git.diff.Diff'>                                                                                                                      │ │
+│ │                      Diffable = <class 'git.diff.Diffable'>                                                                                                                  │ │
+│ │                     DiffIndex = <class 'git.diff.DiffIndex'>                                                                                                                 │ │
+│ │                     FetchInfo = <class 'git.remote.FetchInfo'>                                                                                                               │ │
+│ │                           fun = <module 'git.index.fun' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\fun.py'>             │ │
+│ │                           Git = <class 'git.cmd.Git'>                                                                                                                        │ │
+│ │                        GIT_OK = False                                                                                                                                        │ │
+│ │                GitCmdObjectDB = <class 'git.db.GitCmdObjectDB'>                                                                                                              │ │
+│ │               GitCommandError = <class 'git.exc.GitCommandError'>                                                                                                            │ │
+│ │            GitCommandNotFound = <class 'git.exc.GitCommandNotFound'>                                                                                                         │ │
+│ │               GitConfigParser = <class 'git.config.GitConfigParser'>                                                                                                         │ │
+│ │                         GitDB = <class 'gitdb.db.git.GitDB'>                                                                                                                 │ │
+│ │                      GitError = <class 'git.exc.GitError'>                                                                                                                   │ │
+│ │                          head = <module 'git.refs.head' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\head.py'>             │ │
+│ │                          HEAD = <class 'git.refs.head.HEAD'>                                                                                                                 │ │
+│ │                          Head = <class 'git.refs.head.Head'>                                                                                                                 │ │
+│ │            HookExecutionError = <class 'git.exc.HookExecutionError'>                                                                                                         │ │
+│ │                         index = <module 'git.index' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\__init__.py'>            │ │
+│ │                    IndexEntry = <class 'git.index.typ.IndexEntry'>                                                                                                           │ │
+│ │                     IndexFile = <class 'git.index.base.IndexFile'>                                                                                                           │ │
+│ │                   IndexObject = <class 'git.objects.base.IndexObject'>                                                                                                       │ │
+│ │                       inspect = <module 'inspect' from 'C:\\Users\\LeConquerant\\AppData\\Local\\Programs\\Python\\Python310\\lib\\inspect.py'>                              │ │
+│ │                 InvalidDBRoot = <class 'gitdb.exc.InvalidDBRoot'>                                                                                                            │ │
+│ │     InvalidGitRepositoryError = <class 'git.exc.InvalidGitRepositoryError'>                                                                                                  │ │
+│ │                          List = typing.List                                                                                                                                  │ │
+│ │                      LockFile = <class 'git.util.LockFile'>                                                                                                                  │ │
+│ │                           log = <module 'git.refs.log' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\log.py'>               │ │
+│ │               NoSuchPathError = <class 'git.exc.NoSuchPathError'>                                                                                                            │ │
+│ │                     NULL_TREE = <object object at 0x000002E40A2074D0>                                                                                                        │ │
+│ │                        Object = <class 'git.objects.base.Object'>                                                                                                            │ │
+│ │                       objects = <module 'git.objects' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\objects\\__init__.py'>        │ │
+│ │                      ODBError = <class 'gitdb.exc.ODBError'>                                                                                                                 │ │
+│ │                      Optional = typing.Optional                                                                                                                              │ │
+│ │                            os = <module 'os' from 'C:\\Users\\LeConquerant\\AppData\\Local\\Programs\\Python\\Python310\\lib\\os.py'>                                        │ │
+│ │                           osp = <module 'ntpath' from 'C:\\Users\\LeConquerant\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ntpath.py'>                                │ │
+│ │                    ParseError = <class 'gitdb.exc.ParseError'>                                                                                                               │ │
+│ │                      PathLike = typing.Union[str, os.PathLike]                                                                                                               │ │
+│ │                      PushInfo = <class 'git.remote.PushInfo'>                                                                                                                │ │
+│ │                     reference = <module 'git.refs.reference' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\reference.py'>   │ │
+│ │                     Reference = <class 'git.refs.reference.Reference'>                                                                                                       │ │
+│ │                        RefLog = <class 'git.refs.log.RefLog'>                                                                                                                │ │
+│ │                   RefLogEntry = <class 'git.refs.log.RefLogEntry'>                                                                                                           │ │
+│ │                       refresh = <function refresh at 0x000002E40E418EE0>                                                                                                     │ │
+│ │                          refs = <module 'git.refs' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\__init__.py'>              │ │
+│ │                        remote = <module 'git.remote' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\remote.py'>                    │ │
+│ │                        Remote = <class 'git.remote.Remote'>                                                                                                                  │ │
+│ │                RemoteProgress = <class 'git.util.RemoteProgress'>                                                                                                            │ │
+│ │               RemoteReference = <class 'git.refs.remote.RemoteReference'>                                                                                                    │ │
+│ │                          repo = <module 'git.repo' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\repo\\__init__.py'>              │ │
+│ │                          Repo = <class 'git.repo.base.Repo'>                                                                                                                 │ │
+│ │          RepositoryDirtyError = <class 'git.exc.RepositoryDirtyError'>                                                                                                       │ │
+│ │                        rmtree = <function rmtree at 0x000002E40E4A9E10>                                                                                                      │ │
+│ │                    RootModule = <class 'git.objects.submodule.root.RootModule'>                                                                                              │ │
+│ │            RootUpdateProgress = <class 'git.objects.submodule.root.RootUpdateProgress'>                                                                                      │ │
+│ │                   safe_decode = <function safe_decode at 0x000002E40E4193F0>                                                                                                 │ │
+│ │                      Sequence = typing.Sequence                                                                                                                              │ │
+│ │                         Stats = <class 'git.util.Stats'>                                                                                                                     │ │
+│ │                     Submodule = <class 'git.objects.submodule.base.Submodule'>                                                                                               │ │
+│ │                      symbolic = <module 'git.refs.symbolic' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\symbolic.py'>     │ │
+│ │             SymbolicReference = <class 'git.refs.symbolic.SymbolicReference'>                                                                                                │ │
+│ │                           sys = <module 'sys' (built-in)>                                                                                                                    │ │
+│ │                           tag = <module 'git.refs.tag' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\refs\\tag.py'>               │ │
+│ │                           Tag = <class 'git.refs.tag.TagReference'>                                                                                                          │ │
+│ │                     TagObject = <class 'git.objects.tag.TagObject'>                                                                                                          │ │
+│ │                  TagReference = <class 'git.refs.tag.TagReference'>                                                                                                          │ │
+│ │                    to_hex_sha = <function to_hex_sha at 0x000002E40E439510>                                                                                                  │ │
+│ │                          Tree = <class 'git.objects.tree.Tree'>                                                                                                              │ │
+│ │                  TreeModifier = <class 'git.objects.tree.TreeModifier'>                                                                                                      │ │
+│ │                         Tuple = typing.Tuple                                                                                                                                 │ │
+│ │                           typ = <module 'git.index.typ' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\typ.py'>             │ │
+│ │                 TYPE_CHECKING = False                                                                                                                                        │ │
+│ │                         types = <module 'git.types' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\types.py'>                      │ │
+│ │                         Union = typing.Union                                                                                                                                 │ │
+│ │          UnmergedEntriesError = <class 'git.exc.UnmergedEntriesError'>                                                                                                       │ │
+│ │          UnsupportedOperation = <class 'gitdb.exc.UnsupportedOperation'>                                                                                                     │ │
+│ │                UpdateProgress = <class 'git.objects.submodule.base.UpdateProgress'>                                                                                          │ │
+│ │                          util = <module 'git.index.util' from 'C:\\Users\\LeConquerant\\PycharmProjects\\enigmaPy\\venv\\lib\\site-packages\\git\\index\\util.py'>           │ │
+│ │ WorkTreeRepositoryUnsupported = <class 'git.exc.WorkTreeRepositoryUnsupported'>                                                                                              │ │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ImportError: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\briefcase\__main__.py:15 in main                                                                           │
+│                                                                                                                                                                                  │
+│   12 │   │   command, options = parse_cmdline(sys.argv[1:])                                                                                                                      │
+│   13 │   │   command.check_obsolete_data_dir()                                                                                                                                   │
+│   14 │   │   command.parse_config("pyproject.toml")                                                                                                                              │
+│ ❱ 15 │   │   command(**options)                                                                                                                                                  │
+│   16 │   │   result = 0                                                                                                                                                          │
+│   17 │   except HelpText as e:                                                                                                                                                   │
+│   18 │   │   log.info()                                                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────────────────╮ │
+│ │ command = <briefcase.commands.new.NewCommand object at 0x000002E40AB962C0>                                                                                                   │ │
+│ │       e = BriefcaseCommandError('Briefcase requires git, but it is not installed (or is not on your PATH). Visit:\n\n    https://git-scm.com/\n\nto download and install git │ │
+│ │           manually.\n\nIf you have installed git recently and are still getting this error, you may\nneed to restart your terminal session.\n')                              │ │
+│ │     log = <briefcase.console.Log object at 0x000002E40AB95750>                                                                                                               │ │
+│ │ options = {'template': None}                                                                                                                                                 │ │
+│ │  result = 200                                                                                                                                                                │ │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                                                  │
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\briefcase\commands\new.py:535 in __call__                                                                  │
+│                                                                                                                                                                                  │
+│   532 │                                                                                       ╭────────────────────────────────── locals ───────────────────────────────────╮    │
+│   533 │   def __call__(self, template: Optional[str] = None, **options):                      │  options = {}                                                               │    │
+│   534 │   │   # Confirm all required tools are available                                      │     self = <briefcase.commands.new.NewCommand object at 0x000002E40AB962C0> │    │
+│ ❱ 535 │   │   self.verify_tools()                                                             │ template = None                                                             │    │
+│   536 │   │                                                                                   ╰─────────────────────────────────────────────────────────────────────────────╯    │
+│   537 │   │   return self.new_app(template=template, **options)                                                                                                                  │
+│   538                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\briefcase\commands\new.py:531 in verify_tools                                                              │
+│                                                                                                                                                                                  │
+│   528 │   │   Raises MissingToolException if a required system tool is                        ╭──────────────────────────────── locals ─────────────────────────────────╮        │
+│   529 │   │   missing.                                                                        │ self = <briefcase.commands.new.NewCommand object at 0x000002E40AB962C0> │        │
+│   530 │   │   """                                                                             ╰─────────────────────────────────────────────────────────────────────────╯        │
+│ ❱ 531 │   │   self.git = self.integrations.git.verify_git_is_installed(self)                                                                                                     │
+│   532 │                                                                                                                                                                          │
+│   533 │   def __call__(self, template: Optional[str] = None, **options):                                                                                                         │
+│   534 │   │   # Confirm all required tools are available                                                                                                                         │
+│                                                                                                                                                                                  │
+│ C:\Users\LeConquerant\PycharmProjects\enigmaPy\venv\lib\site-packages\briefcase\integrations\git.py:50 in verify_git_is_installed                                                │
+│                                                                                                                                                                                  │
+│   47 │   │   │   ) from e                                                                    ╭────────────────────────────────── locals ──────────────────────────────────╮      │
+│   48 │   │                                                                                   │ command = <briefcase.commands.new.NewCommand object at 0x000002E40AB962C0> │      │
+│   49 │   │   else:                                                                           ╰────────────────────────────────────────────────────────────────────────────╯      │
+│ ❱ 50 │   │   │   raise BriefcaseCommandError(                                                                                                                                    │
+│   51 │   │   │   │   """\                                                                                                                                                        │
+│   52 Briefcase requires git, but it is not installed (or is not on your PATH). Visit:                                                                                            │
+│   53                                                                                                                                                                             │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Briefcase requires git, but it is not installed (or is not on your PATH). Visit:
+
+    https://git-scm.com/
+
+to download and install git manually.
+
+If you have installed git recently and are still getting this error, you may
+need to restart your terminal session.
+
