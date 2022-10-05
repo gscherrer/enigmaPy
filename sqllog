@@ -1,0 +1,185 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema enigmapy
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `enigmapy` ;
+
+-- -----------------------------------------------------
+-- Schema enigmapy
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `enigmapy` DEFAULT CHARACTER SET utf8 ;
+USE `enigmapy` ;
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`position`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`position` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nom_pos` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`prise`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`prise` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nom` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`groupe musculaire`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`groupe musculaire` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `Nom_fr` VARCHAR(45) NOT NULL,
+  `Nom_ang` VARCHAR(45) NULL,
+  PRIMARY KEY (`Id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`accessoire`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`accessoire` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nom` VARCHAR(45) NOT NULL,
+  `poids` DECIMAL(2) NULL,
+  `accessoirecol` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`exercice`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`exercice` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `Nom_fr` VARCHAR(50) NOT NULL,
+  `Nom_ang` VARCHAR(45) NOT NULL,
+  `position_id` INT NOT NULL,
+  `prise_id` INT NOT NULL,
+  `groupe musculaire_Id` INT NOT NULL,
+  `accessoire_idaccessoire` INT NOT NULL,
+  PRIMARY KEY (`Id`, `position_id`, `prise_id`, `groupe musculaire_Id`, `accessoire_idaccessoire`),
+  CONSTRAINT `fk_exercice_position1`
+    FOREIGN KEY (`position_id`)
+    REFERENCES `enigmapy`.`position` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_exercice_prise1`
+    FOREIGN KEY (`prise_id`)
+    REFERENCES `enigmapy`.`prise` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_exercice_groupe musculaire1`
+    FOREIGN KEY (`groupe musculaire_Id`)
+    REFERENCES `enigmapy`.`groupe musculaire` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_exercice_accessoire1`
+    FOREIGN KEY (`accessoire_idaccessoire`)
+    REFERENCES `enigmapy`.`accessoire` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`seance`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`seance` (
+  `id_seance` INT NOT NULL AUTO_INCREMENT,
+  `date` DATE NULL,
+  `effectue` TINYINT NOT NULL,
+  PRIMARY KEY (`id_seance`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`programme`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`programme` (
+  `idprogramme` INT NOT NULL AUTO_INCREMENT,
+  `programmecol` VARCHAR(45) NULL,
+  PRIMARY KEY (`idprogramme`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`utlisateur`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`utlisateur` (
+  `id` INT NOT NULL,
+  `Pseudo` VARCHAR(20) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `objectifs` VARCHAR(45) NULL,
+  `utlisateurcol` VARCHAR(45) NULL,
+  `workout_id` INT NOT NULL,
+  `programme_idprogramme` INT NOT NULL,
+  PRIMARY KEY (`id`, `workout_id`, `programme_idprogramme`),
+  CONSTRAINT `fk_utlisateur_workout1`
+    FOREIGN KEY (`workout_id`)
+    REFERENCES `enigmapy`.`seance` (`id_seance`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_utlisateur_programme1`
+    FOREIGN KEY (`programme_idprogramme`)
+    REFERENCES `enigmapy`.`programme` (`idprogramme`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`exercice_has_seance`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`exercice_has_seance` (
+  `exercice_Id` INT NOT NULL,
+  `seance_id` INT NOT NULL,
+  PRIMARY KEY (`exercice_Id`, `seance_id`),
+  CONSTRAINT `fk_exercice_has_seance_exercice1`
+    FOREIGN KEY (`exercice_Id`)
+    REFERENCES `enigmapy`.`exercice` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_exercice_has_seance_seance1`
+    FOREIGN KEY (`seance_id`)
+    REFERENCES `enigmapy`.`seance` (`id_seance`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `enigmapy`.`programme_has_seance`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `enigmapy`.`programme_has_seance` (
+  `programme_idprogramme` INT NOT NULL,
+  `seance_id` INT NOT NULL,
+  PRIMARY KEY (`programme_idprogramme`, `seance_id`),
+  CONSTRAINT `fk_programme_has_seance_programme1`
+    FOREIGN KEY (`programme_idprogramme`)
+    REFERENCES `enigmapy`.`programme` (`idprogramme`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_programme_has_seance_seance1`
+    FOREIGN KEY (`seance_id`)
+    REFERENCES `enigmapy`.`seance` (`id_seance`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
